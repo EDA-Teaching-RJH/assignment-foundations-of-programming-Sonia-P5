@@ -33,4 +33,14 @@ def main(): #Mistake 1: Did not add def main() and main()
                 print(n[i] + " - " + r[i])
                 break
             break #Mistake 5: Did not add breaks
+
+        elif opt == "2":
+            new_name = input("Name: ")
+            new_rank = input("Rank: ")
+            new_div = input("Division: ")
+            
+           
+            n.append(new_name)
+            print("Crew member added.")
+            break #Mistake 6: Did not add break
 main()
