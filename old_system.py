@@ -62,7 +62,8 @@ def main(): #Mistake 1: Did not properly defined function, did not include def m
                 for rank in r:
                     if rank == "Captain" or "Commander": 
                         count = count + 1
-                print("High ranking officers: " + str(count)) #Mistake 9: Type cast as string
+                    print("High ranking officers: " + str(count)) #Mistake 9: Type cast as string
+                break #Mistake 10: Break
 
 
 
