@@ -29,6 +29,8 @@ def main(): #Mistake 1: Not including def main() and main()
 
             if opt == "1":  #Mistake 5: Did not put two equal signs
                 print("Current Crew List:")
+                break
+            break #Mistake 6 Break
 
 
     
