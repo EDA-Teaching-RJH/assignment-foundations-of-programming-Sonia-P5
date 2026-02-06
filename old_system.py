@@ -10,4 +10,10 @@ def main(): #Mistake 1: Did not include def main() and main()
         print("...")
         print("WELCOME TO FLEET COMMAND")
     run_system_monolith() #Mistake 2: Did not properly define function
+
+    def loading(): #Mistake 3: Did not define loading
+        loading = 0
+        while loading < 5:
+            print("Loading module " + str(loading))
+
 main()
