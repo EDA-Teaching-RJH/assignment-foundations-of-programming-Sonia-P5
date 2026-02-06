@@ -65,6 +65,35 @@ def main(): #Mistake 1: Did not properly defined function, did not include def m
                     print("High ranking officers: " + str(count)) #Mistake 9: Type cast as string
                 break #Mistake 10: Break
 
+            elif opt == "5":
+                print("Shutting down.")
+                break
+            
+            else:
+                print("Invalid.")
+
+        x = 10 #Mistake 11: Indendetation Issue
+        if x > 5:
+            print("System Check OK")
+        else:
+            print("System Failure")
+            
+       
+        if len(n) > 0:
+            print("Database has entries.")
+        if len(n) == 0:
+            print("Database empty.")
+
+        
+        fuel = 100
+        consumption = 0
+        while fuel > 0:
+            
+            print("Idling...")
+            break 
+            
+        print("End of cycle.")
+
 
 
 main()
