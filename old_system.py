@@ -32,6 +32,8 @@ def main(): #Mistake 1: Not including def main() and main()
             
                 for i in range(10):
                     print(n[i] + " - " + r[i]) 
+                    break #Mistake 6: Forgot to put break
+                break #Mistake 6: Forgot to put break
                 
             elif opt == "2":
                 new_name = input("Name: ")
