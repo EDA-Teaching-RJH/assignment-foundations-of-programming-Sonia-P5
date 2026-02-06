@@ -15,6 +15,24 @@ def main(): #Mistake 1: Did not properly defined function, did not include def m
         loading = 0
         while loading < 5:
             print("Loading module " + str(loading))
-            break #Mistake 4: Forgot to add break
+            break #Mistake 4: Forgot to add 
+        
+        while True:
+            print("\n--- MENU ---")
+            print("1. View Crew")
+            print("2. Add Crew")
+            print("3. Remove Crew")
+            print("4. Analyze Data")
+            print("5. Exit")
+
+            opt = input("Select option: ")
+
+            if opt =="1":  #Mistake 5: Did not put double equals sign
+                print("Current Crew List:")
+            
+                for i in range(10):
+                    print(n[i] + " - " + r[i])
+
+
 
 main()
