@@ -15,5 +15,6 @@ def main(): #Mistake 1: Did not properly defined function, did not include def m
         loading = 0
         while loading < 5:
             print("Loading module " + str(loading))
+            break #Mistake 4: Forgot to add break
 
 main()
