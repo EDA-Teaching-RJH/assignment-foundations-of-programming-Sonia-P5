@@ -69,6 +69,26 @@ def main(): #Mistake 1: Did not include def main() and main()
 
         else:
             print("Invalid.")
-            break #Mistake 10: Add break
+    x = 10 #Mistake 10: Indentation issue
+    if x > 5:
+        print("System Check OK")
+    else:
+        print("System Failure")
+            
+       
+    if len(n) > 0:
+        print("Database has entries.")
+    if len(n) == 0:
+        print("Database empty.")
+
+        
+    fuel = 100
+    consumption = 0
+    while fuel > 0:
+            
+        print("Idling...")
+        break 
+            
+    print("End of cycle.")   
 
 main()
