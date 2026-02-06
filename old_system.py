@@ -40,9 +40,9 @@ def main(): #Mistake 1: Not including def main() and main()
                 new_rank = input("Rank: ")
                 new_div = input("Division: ")
             
-           
                 n.append(new_name)
                 print("Crew member added.")
+                break #Mistake 7: Forgot to add break
             
             elif opt == "3":
                 rem = input("Name to remove: ")
