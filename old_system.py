@@ -17,7 +17,6 @@ def main(): #Mistake 1: Not including def main() and main()
             print("Loading module " + str(loading))
             break #Mistake 4: Forgot to insert Break
         
-    
         while True:
             print("\n--- MENU ---")
             print("1. View Crew")
@@ -28,7 +27,7 @@ def main(): #Mistake 1: Not including def main() and main()
         
             opt = input("Select option: ")
         
-            if opt = "1":  
+            if opt == "1":  #Mistake 5: Only put 1 equal sign not 2
                 print("Current Crew List:")
             
                 for i in range(10):
