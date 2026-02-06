@@ -31,5 +31,7 @@ def main(): #Mistake 1: Did not include def main() and main()
             
             for i in range(10):
                 print(n[i] + " - " + r[i])
+                break #Mistake 5: did not do breaks
+            break
 
 main()
