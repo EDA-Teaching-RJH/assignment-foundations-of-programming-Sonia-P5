@@ -34,6 +34,7 @@ def main(): #Mistake 1: Did not properly defined function, did not include def m
                     print(n[i] + " - " + r[i])
                     break #Mistake 6: Did not add break
                 break #Mistake 6: Did not add break
+
             elif opt == "2":
                 new_name = input("Name: ")
                 new_rank = input("Rank: ")
@@ -43,6 +44,16 @@ def main(): #Mistake 1: Did not properly defined function, did not include def m
                 n.append(new_name)
                 print("Crew member added.")
                 break #Mistake 7: Did not add break
+
+            elif opt == "3":
+                rem = input("Name to remove: ")
+           
+                idx = n.index(rem)
+                n.pop(idx)
+                r.pop(idx)
+                d.pop(idx)
+                print("Removed.")
+                break #Mistake 8: Add Break
 
 
 
