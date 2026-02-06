@@ -1,4 +1,4 @@
-def main(): #Mistake 1: Not Including def main() and main()
+def main(): #Mistake 1: Not including def main() and main()
     n = ["Picard", "Riker", "Data", "Worf"]
     r = ["Captain", "Commander", "Lt. Commander", "Lieutenant"]
     d = ["Command", "Command", "Operations", "Security"]
@@ -9,7 +9,7 @@ def main(): #Mistake 1: Not Including def main() and main()
         print("BOOTING SYSTEM...")
         print("...")
         print("WELCOME TO FLEET COMMAND")
-    run_system_monolith() #Mistake 2, this end part was not included to define the function
+    run_system_monolith() #Mistake 2: did not properly define function, forgot this part.
     
     
         loading = 0
@@ -89,4 +89,5 @@ def main(): #Mistake 1: Not Including def main() and main()
                 break 
             
             print("End of cycle.")
+
 main()
