@@ -53,4 +53,13 @@ def main(): #Mistake 1: Did not add def main() and main()
             d.pop(idx)
             print("Removed.")
             break #Mistake 7: Did not add break
+
+        elif opt == "4":
+            print("Analyzing...")
+            count = 0
+            
+            for rank in r:
+                if rank == "Captain" or "Commander": 
+                    count = count + 1
+            print("High ranking officers: " + str(count)) #Mistake 8: Type cast as string
 main()
