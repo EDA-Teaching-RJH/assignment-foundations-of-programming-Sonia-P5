@@ -16,4 +16,20 @@ def main(): #Mistake 1: Did not include def main() and main()
         print("Loading module " + str(loading))
         break #Mistake 3: Did not add break
 
+    while True:
+        print("\n--- MENU ---")
+        print("1. View Crew")
+        print("2. Add Crew")
+        print("3. Remove Crew")
+        print("4. Analyze Data")
+        print("5. Exit")
+        
+        opt = input("Select option: ")
+
+        if opt == "1":  #Mistake 4: Did not do double equal sign
+            print("Current Crew List:")
+            
+            for i in range(10):
+                print(n[i] + " - " + r[i])
+
 main()
