@@ -61,7 +61,7 @@ def main(): #Mistake 1: Not including def main() and main()
                 for rank in r:
                     if rank == "Captain" or "Commander": 
                         count = count + 1
-                print("High ranking officers: " + count) 
+                print("High ranking officers: " + str(count)) #Mistake 9: Forgot to type cast it as string
             
             elif opt == "5":
                 print("Shutting down.")
