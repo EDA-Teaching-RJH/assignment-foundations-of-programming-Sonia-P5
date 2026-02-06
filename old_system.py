@@ -61,4 +61,5 @@ def main(): #Mistake 1: Did not include def main() and main()
                 if rank == "Captain" or "Commander": 
                     count = count + 1
             print("High ranking officers: " + str(count)) #Mistake 8: Did not typcast as a string
+        break #Mistake 9: Did not add break
 main()
