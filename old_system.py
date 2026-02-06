@@ -34,4 +34,12 @@ def main(): #Mistake 1: Did not include def main() and main()
                 break #Mistake 5: did not do breaks
             break
 
+        elif opt == "2":
+            new_name = input("Name: ")
+            new_rank = input("Rank: ")
+            new_div = input("Division: ")
+            
+            n.append(new_name)
+            print("Crew member added.")
+            break #Mistake 6: Did not ad break
 main()
