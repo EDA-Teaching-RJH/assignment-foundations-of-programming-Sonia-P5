@@ -42,6 +42,7 @@ def main(): #Mistake 1: Did not properly defined function, did not include def m
            
                 n.append(new_name)
                 print("Crew member added.")
+                break #Mistake 7: Did not add break
 
 
 
