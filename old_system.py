@@ -12,7 +12,11 @@ def main(): #Mistake 1: Not including def main() and main()
     run_system_monolith() #Mistake 2: Not properly definiing function
 
     def loading(): #Mistake 3, did not define loading
-        
+        loading = 0
+        while loading < 5:
+            print("Loading module " + str(loading))
+            break #Mistake 4, did not add break
+
 
     
 main()
