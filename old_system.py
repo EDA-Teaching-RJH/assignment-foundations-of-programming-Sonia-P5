@@ -9,4 +9,5 @@ def main(): #Mistake 1: Did not include def main() and main()
         print("BOOTING SYSTEM...")
         print("...")
         print("WELCOME TO FLEET COMMAND")
+    run_system_monolith() #Mistake 2: Did not properly define function
 main()
