@@ -55,6 +55,15 @@ def main(): #Mistake 1: Did not properly defined function, did not include def m
                 print("Removed.")
                 break #Mistake 8: Add Break
 
+            elif opt == "4":
+                print("Analyzing...")
+                count = 0
+            
+                for rank in r:
+                    if rank == "Captain" or "Commander": 
+                        count = count + 1
+                print("High ranking officers: " + str(count)) #Mistake 9: Type cast as string
+
 
 
 main()
