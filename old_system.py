@@ -66,4 +66,9 @@ def main(): #Mistake 1: Did not include def main() and main()
         elif opt == "5":
             print("Shutting down.")
             break
+
+        else:
+            print("Invalid.")
+            break #Mistake 10: Add break
+
 main()
