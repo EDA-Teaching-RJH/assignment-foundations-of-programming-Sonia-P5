@@ -15,6 +15,7 @@ def main(): #Mistake 1: Not including def main() and main()
         loading = 0
         while loading < 5:
             print("Loading module " + str(loading))
+            break #Mistake 4: Forgot to insert Break
         
     
         while True:
