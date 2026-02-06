@@ -32,6 +32,16 @@ def main(): #Mistake 1: Did not properly defined function, did not include def m
             
                 for i in range(10):
                     print(n[i] + " - " + r[i])
+                    break #Mistake 6: Did not add break
+                break #Mistake 6: Did not add break
+            elif opt == "2":
+                new_name = input("Name: ")
+                new_rank = input("Rank: ")
+                new_div = input("Division: ")
+            
+           
+                n.append(new_name)
+                print("Crew member added.")
 
 
 
