@@ -42,4 +42,14 @@ def main(): #Mistake 1: Did not include def main() and main()
             n.append(new_name)
             print("Crew member added.")
             break #Mistake 6: Did not ad break
+
+        elif opt == "3":
+            rem = input("Name to remove: ")
+           
+            idx = n.index(rem)
+            n.pop(idx)
+            r.pop(idx)
+            d.pop(idx)
+            print("Removed.")
+            break#Mistake 7, did not add break
 main()
