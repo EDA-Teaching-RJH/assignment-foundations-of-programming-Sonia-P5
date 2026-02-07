@@ -1,49 +1,14 @@
-def main():
-    n = ["Picard", "Riker", "Data", "Worf", "Spock"]
-    r = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Captain" ]
-    d = ["Command", "Command", "Operations", "Security", "Science"]
-    ids=[1, 2, 3, 4, 5]
-    list=[n, r, d, ids]
+n = ["Picard", "Riker", "Data", "Worf", "Spock"]
+r = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Captain" ]
+d = ["Command", "Command", "Operations", "Security", "Science"]
+ids=[1, 2, 3, 4, 5]
+list=[n, r, d, ids]
 
-    print("BOOTING SYSTEM...")
-    print("...")
-    print("WELCOME TO FLEET COMMAND")
-
-    def display_menu():
-        name=input("Insert your Full Name: ")
-        print("\n--- MENU ---")
-        print("1. View Crew")
-        print("2. Add Crew")
-        print("3. Remove Crew")
-        print("4. Analyze Data")
-        print("5. Exit")
-        print(f"Current User Logged in: {name}")
-        opt = input("Select option: ")
-
-        def init_database():
-            if opt=="1":
-                print(list)
-        init_database()
-
-        def add_member():
-            if opt=="2":
-                a=int(input("Insert a new ID: "))
+g=int(input("Which ID would you like removed: "))
+ids.remove(g)
+del n[g]
+del r[g]
+del d[g]
                 
-                ids.append(a)
-                print(ids)
-        add_member()
-    display_menu()
+print(f"{n} {r} {d} {ids}")
 
-    
-
-    
-   
-    
-    
-
-    
-    
-
-
-    
-main()
