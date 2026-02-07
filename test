@@ -37,8 +37,7 @@ for i in range(len(n)):
                 l=j-1
                 m=str(input("What would you like to update them to: "))
                 r[l]=m
-                print(f"{n} {r} {d} {ids}")
-                        
+                print(f"{n} {r} {d} {ids}")               
         update_rank()
 
         def display_roster():
