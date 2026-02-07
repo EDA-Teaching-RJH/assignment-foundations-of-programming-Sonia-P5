@@ -14,6 +14,8 @@ def main():
         print("3. Remove Crew")
         print("4. Update Rank")
         print("5. Display Roster")
+        print("6. Search for a Crew")
+        print("8. Filter")
         print(f"Current Student Logged in: {name}")
         opt = input("Select option: ")
 
@@ -84,6 +86,23 @@ def main():
                 for x in range(len(id)):
                     print(f"{x+1} {id[x]}")
         display_roster()
+
+        def search_crew():
+            if opt=="6":
+                o=str(input("Input a Search Term: "))
+                if o=='Captain':
+                    print("Result: Picard and Spock")
+                elif o=="Commander":
+                    print("Result: Riker")
+                elif o=="Lt. Commander":    
+                    print("Result: Data")
+                elif o=="Lieutenant":
+                    print("Result: Worf")
+                else:
+                    print("Invalid Input")
+        search_crew()
+
+        
 
     display_menu()
 
