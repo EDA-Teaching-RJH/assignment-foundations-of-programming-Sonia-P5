@@ -6,13 +6,15 @@ def main():
     list=[n, r, d, id]
 
 
-    def run_system_monolith():
+    def display_menu():
+        name=input("What is your Full Name: ")
         print("\n--- MENU ---")
         print("1. View Crew")
         print("2. Add Crew")
         print("3. Remove Crew")
         print("4. Analyze Data")
         print("5. Exit")
+        print(f"Current Student Logged in: {name}")
         opt = input("Select option: ")
 
         def init_database():
@@ -20,6 +22,29 @@ def main():
                 print(list)
         init_database()
 
-    run_system_monolith()
+        def add_member():
+            if opt=="2":
+                a=int(input("Enter a new ID: "))
+                while a<=5:
+                    print("ID already exists")
+                    a=int(input("Enter a new ID: "))
+                    
+                else:
+                    b=input("Enter Name: ")
+                    c=input("Enter Rank: ")
+                    e=input("Enter Division: ")
+
+                    while c!="Captain" or c!="Commander" or c!="Lt. Commander" or c!="Lieutenant":
+                        print("Invalid")
+                        c=input("Enter Rank: ")
+                        break
+                    n.append(b)
+                    r.append(c)
+                    d.append(e)
+                    id.append(a)
+                    print(f"{n} {r} {d} {id}")
+        add_member()
+
+    display_menu()
 
 main()
