@@ -1,9 +1,9 @@
 def main():
-    n = ["Picard", "Riker", "Data", "Worf", "Spork"]
-    r = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Captain"]
-    d = ["Command", "Command", "Operations", "Security", "Science"]
-    id=[1, 2, 3, 4, 5]
-    list=[n, r, d, id]
+    Names = ["Picard", "Riker", "Data", "Worf", "Spork"]
+    Ranks = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Captain"]
+    Divisions = ["Command", "Command", "Operations", "Security", "Science"]
+    IDs=[1, 2, 3, 4, 5]
+    list=[Names, Ranks, Divisions, IDs]
 
 
     def display_menu():
@@ -42,22 +42,22 @@ def main():
                         print("Invalid")
                         c=input("Enter Rank: ")
                         break
-                    n.append(b)
-                    r.append(c)
-                    d.append(e)
-                    id.append(a)
-                    print(f"{n} {r} {d} {id}")
+                    Names.append(b)
+                    Ranks.append(c)
+                    Divisions.append(e)
+                    IDs.append(a)
+                    print(f"{Names} {Ranks} {Divisions} {IDs}")
         add_member()
 
         def remove_member():
             if opt=="3":
                 g=int(input("Which ID would you like removed: "))
                 h=g-1
-                id.remove(g)
-                del n[h]
-                del r[h]
-                del d[h]    
-                print(f"{n} {r} {d} {id}")
+                IDs.remove(g)
+                del Names[h]
+                del Ranks[h]
+                del Divisions[h]    
+                print(f"{Names} {Ranks} {Divisions} {IDs}")
         remove_member()
 
         def update_rank():
@@ -65,28 +65,28 @@ def main():
                 j=int(input("Enter the ID of the member you would like to update: "))
                 l=j-1
                 m=str(input("What would you like to update them to: "))
-                r[l]=m
-                print(f"{n} {r} {d} {id}")
+                Ranks[l]=m
+                print(f"{Names} {Ranks} {Divisions} {IDs}")
         update_rank()
 
         def display_roster():
             if opt=="5":
                 print("----TABLE----")
                 print("NAMES")
-                for x in range(len(n)):
-                    print(f"{x+1} {n[x]}")
+                for x in range(len(Names)):
+                    print(f"{x+1} {Names[x]}")
                 
                 print("RANK")
-                for x in range(len(r)):
-                    print(f"{x+1} {r[x]}")
+                for x in range(len(Ranks)):
+                    print(f"{x+1} {Ranks[x]}")
 
                 print("DIVISION")
-                for x in range(len(d)):
-                    print(f"{x+1} {d[x]}")
+                for x in range(len(Divisions)):
+                    print(f"{x+1} {Divisions[x]}")
 
                 print("ID")
-                for x in range(len(id)):
-                    print(f"{x+1} {id[x]}")
+                for x in range(len(Names)):
+                    print(f"{x+1} {IDs[x]}")
         display_roster()
 
         def search_crew():
@@ -124,8 +124,8 @@ def main():
         def calculate_payroll():
             if opt=="8":
                 credit=[1000, 3000, 500, 30, 1000]
-                for x in range(len(n)):
-                    print(f"{x+1} {n[x]} {credit[x]}")
+                for x in range(len(Names)):
+                    print(f"{x+1} {Names[x]} {credit[x]}")
         calculate_payroll()
 
         def count_officers():
