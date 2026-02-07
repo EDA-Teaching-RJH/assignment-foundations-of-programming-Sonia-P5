@@ -28,10 +28,8 @@ for i in range(len(n)):
                 del n[h]
                 del r[h]
                 del d[h]    
-                print(f"{n} {r} {d} {ids}")
-                
-                
-        remove_member()
+                print(f"{n} {r} {d} {ids}")          
+    remove_member()
 
         def update_rank():
             if opt=="4":

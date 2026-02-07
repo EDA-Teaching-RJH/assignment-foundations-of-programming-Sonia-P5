@@ -7,30 +7,12 @@ def main():
 
    
     opt = input("Select option: ")
-
-        
-    def add_member():
-        if opt=="2":
-            a=int(input("Insert a New ID: "))
-
-            while a<=5:
-                print("That ID already exists")
-                a=int(input("Enter New ID: "))
-
-            b=str(input("Insert Name: "))
-            c=str(input("Insert Rank: "))
-            e=(input("Insert Division: "))
-
-            while not c=="Captain" or c=="Commander" or c=="Lt. Commander" or c=="Lieutenant":
-                print("Invalid Rank")
-                c=str(input("Insert Rank: "))
-
-            ids.remove(a)
-            n.remove(b)  
-            r.remove(c)
-            d.remove(e)
-        print(f"{n} {r} {d} {ids}")
-    add_member()
+    def x():
+        def remove_member():
+            if opt=="3":
+                g=int(input("What ID would you like to be removed: "))
+        remove_member()
+    x()
         
     
 main()
