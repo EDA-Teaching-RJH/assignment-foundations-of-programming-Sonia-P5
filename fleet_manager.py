@@ -45,6 +45,16 @@ def main():
                     print(f"{n} {r} {d} {id}")
         add_member()
 
+        def remove_member():
+            if opt=="3":
+                g=int(input("Which ID would you like removed: "))
+                h=g-1
+                id.remove(g)
+                del n[h]
+                del r[h]
+                del d[h]    
+                print(f"{n} {r} {d} {id}")
+        remove_member()
     display_menu()
 
 main()
