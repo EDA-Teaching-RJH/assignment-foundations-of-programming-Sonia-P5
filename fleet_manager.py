@@ -1,5 +1,34 @@
 def main():
-    n = ["Picard", "Riker", "Data", "Worf"]
-    r = ["Captain", "Commander", "Lt. Commander", "Lieutenant"]
-    d = ["Command", "Command", "Operations", "Security"]
+    n = ["Picard", "Riker", "Data", "Worf", "Spock"]
+    r = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Captain" ]
+    d = ["Command", "Command", "Operations", "Security", "Science"]
+    ids=[1, 2, 3, 4, 5]
+    list=[n, r, d, ids]
+
+    print("BOOTING SYSTEM...")
+    print("...")
+    print("WELCOME TO FLEET COMMAND")
+
+    print("\n--- MENU ---")
+    print("1. View Crew")
+    print("2. Add Crew")
+    print("3. Remove Crew")
+    print("4. Analyze Data")
+    print("5. Exit")
+        
+    opt = input("Select option: ")
+
+    def init_database():
+        if opt=="1":
+            print(list)
+    init_database()
+   
+    
+    
+
+    
+    
+
+
+    
 main()
