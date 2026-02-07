@@ -12,7 +12,7 @@ def main():
         print("1. View Crew")
         print("2. Add Crew")
         print("3. Remove Crew")
-        print("4. Analyze Data")
+        print("4. Update Rank")
         print("5. Exit")
         print(f"Current Student Logged in: {name}")
         opt = input("Select option: ")
@@ -55,6 +55,17 @@ def main():
                 del d[h]    
                 print(f"{n} {r} {d} {id}")
         remove_member()
+
+        def update_rank():
+            if opt=="4":
+                j=int(input("Enter the ID of the member you would like to update: "))
+                l=j-1
+                m=str(input("What would you like to update them to: "))
+                r[l]=m
+                print(f"{n} {r} {d} {id}")
+        update_rank()
+
+
     display_menu()
 
 main()
