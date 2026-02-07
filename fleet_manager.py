@@ -13,7 +13,7 @@ def main():
         print("2. Add Crew")
         print("3. Remove Crew")
         print("4. Update Rank")
-        print("5. Exit")
+        print("5. Display Roster")
         print(f"Current Student Logged in: {name}")
         opt = input("Select option: ")
 
@@ -65,6 +65,25 @@ def main():
                 print(f"{n} {r} {d} {id}")
         update_rank()
 
+        def display_roster():
+            if opt=="5":
+                print("----TABLE----")
+                print("NAMES")
+                for x in range(len(n)):
+                    print(f"{x+1} {n[x]}")
+                
+                print("RANK")
+                for x in range(len(r)):
+                    print(f"{x+1} {r[x]}")
+
+                print("DIVISION")
+                for x in range(len(d)):
+                    print(f"{x+1} {d[x]}")
+
+                print("ID")
+                for x in range(len(id)):
+                    print(f"{x+1} {id[x]}")
+        display_roster()
 
     display_menu()
 
