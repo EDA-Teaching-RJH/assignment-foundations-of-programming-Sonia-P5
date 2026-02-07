@@ -128,6 +128,18 @@ def main():
                     print(f"{x+1} {n[x]} {credit[x]}")
         calculate_payroll()
 
+        def count_officers():
+            if opt=="9":
+                q=input("Select one of the following to discover how many people are in said rank position (Captain or Commander): ")
+                if q=="Captain":
+                    print("2")
+                elif q=="Commander":
+                    print("1")
+                else:
+                    print("Invalid Input")
+                    q=input("Select one of the following to discover how many people are in said rank position (Captain or Commander): ")      
+        count_officers()
+
         
 
     display_menu()
