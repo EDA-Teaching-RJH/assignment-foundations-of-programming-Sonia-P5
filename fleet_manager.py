@@ -9,19 +9,26 @@ def main():
     print("...")
     print("WELCOME TO FLEET COMMAND")
 
-    print("\n--- MENU ---")
-    print("1. View Crew")
-    print("2. Add Crew")
-    print("3. Remove Crew")
-    print("4. Analyze Data")
-    print("5. Exit")
-        
-    opt = input("Select option: ")
+    def display_menu():
+        name=input("Insert your Full Name: ")
+        print("\n--- MENU ---")
+        print("1. View Crew")
+        print("2. Add Crew")
+        print("3. Remove Crew")
+        print("4. Analyze Data")
+        print("5. Exit")
+        print(f"Current User Logged in: {name}")
+        opt = input("Select option: ")
 
-    def init_database():
-        if opt=="1":
-            print(list)
-    init_database()
+        def init_database():
+            if opt=="1":
+                print(list)
+        init_database()
+    display_menu()
+
+    
+
+    
    
     
     
