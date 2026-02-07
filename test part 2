@@ -5,14 +5,29 @@ def main():
     ids=[1, 2, 3, 4, 5]
     list=[n, r, d, ids]
 
-   
-    opt = input("Select option: ")
-    def x():
-        def remove_member():
-            if opt=="3":
-                g=int(input("What ID would you like to be removed: "))
-        remove_member()
-    x()
-        
-    
+    print("BOOTING SYSTEM...")
+    print("...")
+    print("WELCOME TO FLEET COMMAND")
+
+    def display_menu():
+        name=input("Insert your Full Name: ")
+        print("\n--- MENU ---")
+        print("1. View Crew")
+        print("2. Add Crew")
+        print("3. Remove Crew")
+        print("4. Update Rank")
+        print("5. Analyze Data")
+        print("6. Search Crew")
+        print("7. Members of a Division")
+        print("8. Credit Value for Each Rank")
+        print("9. Count the # of a rank")
+        print(f"Current Student Logged in: {name}")
+        opt = input("Select option: ")
+
+        def init_database():
+            if opt=="1":
+                print(list)
+        init_database()
+
+    display_menu()
 main()
