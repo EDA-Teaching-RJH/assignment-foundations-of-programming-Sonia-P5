@@ -102,6 +102,23 @@ def main():
                     print("Invalid Input")
         search_crew()
 
+        def filter_by_division():
+            if opt=="7":
+                p=input("Select one of the following: Command, Operations, Security, or Sciences: ")
+
+                if p=="Command":
+                    print("Picard and Riker")
+                elif p=="Operations": 
+                    print("Data")
+                elif p=="Security":
+                    print("Worf")
+                elif p=="Sciences":
+                    print("Spock")
+                else:
+                    print("Invalid Input")
+                    p=input("Select one of the following: Command, Operations, Security, or Sciences")  
+        filter_by_division()
+
         
 
     display_menu()
