@@ -63,49 +63,6 @@ def main():
                 print(f"{n} {r} {d} {ids}")          
         remove_member()
 
-        def update_rank():
-            if opt=="4":
-                j=int(input("Enter the ID of the member you would like to update: "))
-                l=j-1
-                m=str(input("What would you like to update them to: "))
-                r[l]=m
-                print(f"{n} {r} {d} {ids}")               
-        update_rank()
-
-        def display_roster():
-            if opt=="5":
-                print("----TABLE----")
-                print("NAMES")
-                for x in range(len(n)):
-                    print(f"{x+1} {n[x]}")
-                
-                print("RANK")
-                for x in range(len(r)):
-                    print(f"{x+1} {r[x]}")
-
-                print("DIVISION")
-                for x in range(len(d)):
-                    print(f"{x+1} {d[x]}")
-
-                print("ID")
-                for x in range(len(ids)):
-                    print(f"{x+1} {ids[x]}")
-        display_roster()
-
-        def search_crew():
-            if opt=="6":
-                o=str(input("Input a Search Term: "))
-                if o=='Captain':
-                    print("Result: Picard and Spock")
-                elif o=="Commander":
-                    print("Result: Riker")
-                elif o=="Lt. Commander":    
-                    print("Result: Data")
-                elif o=="Lieutenant":
-                    print("Result: Worf")
-                else:
-                    print("Invalid Input")
-        search_crew()
 
         
             
