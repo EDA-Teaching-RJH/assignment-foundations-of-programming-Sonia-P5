@@ -28,18 +28,9 @@ def main():
         def add_member():
             if opt=="2":
                 a=int(input("Insert a new ID: "))
-                if a<=5:
-                    print("That ID already exists")
-                    a=input("Insert a new ID: ")
-                else:
-                    b=str(input("Insert Name: "))
-                    c=str(input("Insert Rank: "))
-                    e=(input("Insert Division: "))
-            n.append(b)
-            r.append(c)
-            d.append(e)
-            ids.append(a)
-            print(f"{n} {r} {ids}")
+                
+                ids.append(a)
+                print(ids)
         add_member()
     display_menu()
 
