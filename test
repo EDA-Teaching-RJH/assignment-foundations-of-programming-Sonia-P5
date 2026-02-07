@@ -2,6 +2,6 @@ n = ["Picard", "Riker", "Data", "Worf", "Spock"]
 r = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Captain" ]
 d = ["Command", "Command", "Operations", "Security", "Science"]
 ids=[1, 2, 3, 4, 5]
-list=[n, r, d, ids]
 
-print(list[1][2])
+for i in range(len(n)):
+    print(f"{i+1} {n[i]}")
