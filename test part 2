@@ -1,0 +1,36 @@
+def main():
+    n = ["Picard", "Riker", "Data", "Worf", "Spock"]
+    r = ["Captain", "Commander", "Lt. Commander", "Lieutenant", "Captain" ]
+    d = ["Command", "Command", "Operations", "Security", "Science"]
+    ids=[1, 2, 3, 4, 5]
+    list=[n, r, d, ids]
+
+   
+    opt = input("Select option: ")
+
+        
+    def add_member():
+        if opt=="2":
+            a=int(input("Insert a New ID: "))
+
+            while a<=5:
+                print("That ID already exists")
+                a=int(input("Enter New ID: "))
+
+            b=str(input("Insert Name: "))
+            c=str(input("Insert Rank: "))
+            e=(input("Insert Division: "))
+
+            while not c=="Captain" or c=="Commander" or c=="Lt. Commander" or c=="Lieutenant":
+                print("Invalid Rank")
+                c=str(input("Insert Rank: "))
+
+            ids.remove(a)
+            n.remove(b)  
+            r.remove(c)
+            d.remove(e)
+        print(f"{n} {r} {d} {ids}")
+    add_member()
+        
+    
+main()
