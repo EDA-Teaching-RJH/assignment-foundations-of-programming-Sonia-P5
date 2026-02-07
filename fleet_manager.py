@@ -18,7 +18,8 @@ def main():
         print("4. Update Rank")
         print("5. Analyze Data")
         print("6. Search Crew")
-        print("7. Exit")
+        print("7. Members of a Division")
+        print("8. Exit")
         print(f"Current User Logged in: {name}")
         opt = input("Select option: ")
 
@@ -101,11 +102,24 @@ def main():
                     print("Result: Worf")
                 else:
                     print("Invalid Input")
-                    
-        
-                
-
         search_crew()
+
+        def filter_by_division():
+            if opt=="7":
+                p=input("Select one of the following: Command, Operations, Security, or Sciences: ")
+
+                if p=="Command":
+                    print("Picard and Riker")
+                elif p=="Operations": 
+                    print("Data")
+                elif p=="Security":
+                    print("Worf")
+                elif p=="Sciences":
+                    print("Spock")
+                else:
+                    print("Invalid Input")
+                    p=input("Select one of the following: Command, Operations, Security, or Sciences")  
+        filter_by_division()
     display_menu()
     
 main()
