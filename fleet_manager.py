@@ -19,6 +19,7 @@ def main():
         print("5. Analyze Data")
         print("6. Search Crew")
         print("7. Members of a Division")
+        print("8. Credit Value for Each Rank")
         print("8. Exit")
         print(f"Current User Logged in: {name}")
         opt = input("Select option: ")
@@ -120,6 +121,14 @@ def main():
                     print("Invalid Input")
                     p=input("Select one of the following: Command, Operations, Security, or Sciences")  
         filter_by_division()
+
+        def calculate_payroll():
+            if opt=="8":
+                credit=[1000, 3000, 500, 30, 1000]
+                for x in range(len(n)):
+                    print(f"{x+1} {n[x]} {credit[x]}")
+        
+        calculate_payroll()
     display_menu()
     
 main()
