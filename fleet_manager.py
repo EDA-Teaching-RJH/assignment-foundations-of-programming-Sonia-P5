@@ -20,7 +20,8 @@ def main():
         print("6. Search Crew")
         print("7. Members of a Division")
         print("8. Credit Value for Each Rank")
-        print("8. Exit")
+        print("9. Count the # of a rank")
+        print("10. Exit")
         print(f"Current User Logged in: {name}")
         opt = input("Select option: ")
 
@@ -129,6 +130,17 @@ def main():
                     print(f"{x+1} {n[x]} {credit[x]}")
         
         calculate_payroll()
+
+        def count_officers():
+            q=input("Select one of the following to discover how many people are in said rank position (Captain or Commander): ")
+            if q=="Captain":
+                print("2")
+            elif q=="Commander":
+                print("1")
+            else:
+                print("Invalid Input")
+                q=input("Select one of the following to discover how many people are in said rank position (Captain or Commander): ")      
+        count_officers()
     display_menu()
     
 main()
