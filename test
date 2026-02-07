@@ -4,11 +4,4 @@ d = ["Command", "Command", "Operations", "Security", "Science"]
 ids=[1, 2, 3, 4, 5]
 list=[n, r, d, ids]
 
-g=int(input("Which ID would you like removed: "))
-ids.remove(g)
-del n[g]
-del r[g]
-del d[g]
-                
-print(f"{n} {r} {d} {ids}")
-
+print(list[1][2])
