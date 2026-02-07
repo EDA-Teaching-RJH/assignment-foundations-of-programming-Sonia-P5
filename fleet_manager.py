@@ -63,6 +63,15 @@ def main():
                 print(f"{n} {r} {d} {ids}")          
         remove_member()
 
+        def update_rank():
+            if opt=="4":
+                j=int(input("Enter the ID of the member you would like to update: "))
+                l=j-1
+                m=str(input("What would you like to update them to: "))
+                r[l]=m
+                print(f"{n} {r} {d} {ids}")              
+        update_rank()
+
 
         
             
