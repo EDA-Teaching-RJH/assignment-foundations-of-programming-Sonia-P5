@@ -26,7 +26,7 @@ def main():
                 print(list)
         init_database()
 
-        def add_member():
+        def add_member(Names, Ranks, Divisions, IDs):
             if opt=="2":
                 a=int(input("Enter a new ID: "))
                 while a<=5:
@@ -47,9 +47,9 @@ def main():
                     Divisions.append(e)
                     IDs.append(a)
                     print(f"{Names} {Ranks} {Divisions} {IDs}")
-        add_member()
+        add_member(Names, Ranks, Divisions, IDs)
 
-        def remove_member():
+        def remove_member(Names, Ranks, Divisions, IDs):
             if opt=="3":
                 g=int(input("Which ID would you like removed: "))
                 h=g-1
@@ -58,18 +58,18 @@ def main():
                 del Ranks[h]
                 del Divisions[h]    
                 print(f"{Names} {Ranks} {Divisions} {IDs}")
-        remove_member()
+        remove_member(Names, Ranks, Divisions, IDs)
 
-        def update_rank():
+        def update_rank(Names, Ranks, Divisions, IDs):
             if opt=="4":
                 j=int(input("Enter the ID of the member you would like to update: "))
                 l=j-1
                 m=str(input("What would you like to update them to: "))
                 Ranks[l]=m
                 print(f"{Names} {Ranks} {Divisions} {IDs}")
-        update_rank()
+        update_rank(Names, Ranks, Divisions, IDs)
 
-        def display_roster():
+        def display_roster(Names, Ranks, Divisions, IDs):
             if opt=="5":
                 print("----TABLE----")
                 print("NAMES")
@@ -85,28 +85,36 @@ def main():
                     print(f"{x+1} {Divisions[x]}")
 
                 print("ID")
-                for x in range(len(Names)):
+                for x in range(len(IDs)):
                     print(f"{x+1} {IDs[x]}")
-        display_roster()
+        display_roster(Names, Ranks, Divisions, IDs)
 
-        def search_crew():
+        def search_crew(Names, Ranks, Divisions, IDs):
             if opt=="6":
                 o=str(input("Input a Search Term: "))
                 if o=='Captain':
-                    print("Result: Picard and Spock")
+                    print("Result: Picard and Spork")
                 elif o=="Commander":
                     print("Result: Riker")
                 elif o=="Lt. Commander":    
                     print("Result: Data")
                 elif o=="Lieutenant":
                     print("Result: Worf")
+                elif o=="Command":
+                    print("Result: Picard and Riker")
+                elif o=="Operations":
+                    print("Result: Data")
+                elif o=="Security":
+                    print("Result: Worf")
+                elif o=="Science":
+                    print("Result: Spork")
                 else:
                     print("Invalid Input")
-        search_crew()
+        search_crew(Names, Ranks, Divisions, IDs)
 
-        def filter_by_division():
+        def filter_by_division(Names, Divisions):
             if opt=="7":
-                p=input("Select one of the following: Command, Operations, Security, or Sciences: ")
+                p=input("Select one of the following: Command, Operations, or Sciences: ")
 
                 if p=="Command":
                     print("Picard and Riker")
@@ -118,17 +126,19 @@ def main():
                     print("Spock")
                 else:
                     print("Invalid Input")
-                    p=input("Select one of the following: Command, Operations, Security, or Sciences")  
-        filter_by_division()
+                    p=input("Select one of the following: Command, Operations, or Sciences: ")
+                    return  
+        filter_by_division(Names, Divisions)
 
-        def calculate_payroll():
+        def calculate_payroll(Ranks):
             if opt=="8":
                 credit=[1000, 3000, 500, 30, 1000]
                 for x in range(len(Names)):
                     print(f"{x+1} {Names[x]} {credit[x]}")
-        calculate_payroll()
+                print("Total Cost: 5530")
+        calculate_payroll(Ranks)
 
-        def count_officers():
+        def count_officers(Ranks):
             if opt=="9":
                 q=input("Select one of the following to discover how many people are in said rank position (Captain or Commander): ")
                 if q=="Captain":
@@ -138,7 +148,7 @@ def main():
                 else:
                     print("Invalid Input")
                     q=input("Select one of the following to discover how many people are in said rank position (Captain or Commander): ")      
-        count_officers()
+        count_officers(Ranks)
 
         
 
